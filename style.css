@@ -1,9 +1,10 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0px;
     padding: 0px;
-    
+    font-family: "Montserrat", sans-serif;
+    color: white;
     
     
     
@@ -11,6 +12,14 @@
 ::-webkit-scrollbar{
     width: 0px;
     height: 0px;
+}
+p#nomes{
+    display: block;
+    text-align: center;
+    height: 100px;
+    color: white;
+    font-size: 1.6em;
+
 }
 body{
     background-color: black;
@@ -20,7 +29,7 @@ h1{
     color: white;
     font-size: 3em;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 section.cont{
@@ -31,42 +40,85 @@ section.cont{
     height: 100vh
 }
 section P{
-    font-size: 2.8em;
+    font-size: 2.4em;
     text-align: justify;
-    line-height: 2.5em;
-    background-color: lightgray;   
+    line-height: 2em;
+    background-color: black;
+    color:white;
     padding: 10px;
     border-radius: 5px;
 }
-section.bage-logo{
-    height: 100px;
-    width: 100vw;
-    background-color: black;
-    background-image: url(imagens/file.png);
-    background-position: center;
-    background-size: 100px;
-}
+
 section#bage{
     display: block;
     margin-bottom: 100px;
 
 }
+section#bage h1{
+    margin: 100px;
+}
 section#bage p {
+    display: inline;
     background-color: black;
     color: white;
-    width: 100vw;
-    height: 100px;
+    height: 20px;
+    font-size: 2em;
     text-align: center;
 }
 
-section#bage img{
+
+    
+
+.direita{
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+    margin: 20px;
+}
+.direita img{
     width: 400px;
     height: 300px;
 }
+.direita img#logo{
+    
+}
+.esquerda img{
+    width: 400px;
+    height: 300px;
+}
+.esquerda{
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+    margin: 20px;
+}
+.centro{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+img.logo{
+    width: 150px;
+    height: 300px;
+}
+div.bage-vibes{
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    margin-bottom: 300px;
+}
+div.esquerdinha {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    margin-bottom: 200px;
+}
+
 section#testemunho{
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    height: 100vh;
 }
 section#testemunho p{
     font-size: 2.4em;
@@ -77,6 +129,7 @@ div.video{
     display: flex;
     justify-content: center;
     margin: 30px;
+    height: 100vh;
 }
 video{
     width: 500px;
@@ -85,39 +138,111 @@ video{
 section#curiosidade{
     display: flex;
     justify-content: center;
+    height: 90vh;
 }
 section#curiosidade p{
     font-size: 2.4em;
     text-align: justify;
-    line-height: 2.5em; 
+    line-height: 2.4em; 
+   
+
 }
 div#niver{
     display: flex;
     justify-content: center;
     margin: 30px;
+    height: 100vh;
+    
+    
+}
+div#niver p{
+    
+   line-height: 2em;
+    
+    
 }
  div#niver img{
     width: 400px;
     height: 300px;
  }
-div.final img{
+ div#niver p{
+    display: inline;
+    background-color: black;
+    color: white;
+    height: 20px;
+    font-size: 2em;
+    text-align: center;
+    margin: 20px;
+    
+ }
+div#final img{
+    width: 400px;
+    height: 500px;
+}
+img.ajuste{
     width: 500px;
     height: 500px;
 }
-img#ajuste{
-    width: 500px;
-    height: 400px;
-}
-section#final{
+section#fim{
     display: flex;
     justify-content: center;
 }
-section#final p{
-    font-size: 2.4em;
+section#fim p{
+    font-size: 2em;
     text-align: justify;
-    line-height: 2.5em; 
+    line-height: 2em; 
 }
-div.final{
+#final{
     margin: 40px;
 }
+img.ajj{
+    width: 500px;
+    height: 400px;}
 
+.lele{
+    
+        display: flex;
+        justify-content: left;
+        height: 100vh;
+        margin: 20px;
+    
+}
+.didi{
+    
+        display: flex;
+        justify-content: right;
+        height: 100vh;
+        margin: 20px;
+    
+}
+#the-last{
+    height: 100vh;
+}
+#one p{
+    display: inline;
+    background-color: black;
+    color: white;
+    height: 20px;
+    font-size: 2em;
+    text-align: center;
+    margin: 20px;
+    padding-top: 150px;
+    margin: 30px;
+}
+#acabou p{
+    display: inline;
+    background-color: black;
+    color: white;
+    height: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 20px;
+    padding-top: 150px;
+    margin: 30px;
+
+}
+#isolado{
+    text-align: center;
+    font-size: 2em;
+    margin:10px 40px;
+}
