@@ -5,6 +5,12 @@
     padding: 0px;
     
     
+    
+    
+}
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
 }
 body{
     background-color: black;
@@ -14,10 +20,11 @@ h1{
     color: white;
     font-size: 3em;
     text-align: center;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 section.cont{
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
    
@@ -57,21 +64,56 @@ section#bage img{
     height: 300px;
 }
 section#testemunho{
+    display: flex;
+    justify-content: center;
     margin-top: 30px;
-    display: grid;
-    place-content: center;
 }
 section#testemunho p{
     font-size: 2.4em;
     text-align: justify;
     line-height: 2.5em; 
 }
-section#testemunho video{
-    margin: 20px;
-    width: 400px;
-    height: 600px;
-
-   
-
-    
+div.video{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
 }
+section#curiosidade{
+    display: flex;
+    justify-content: center;
+}
+section#curiosidade p{
+    font-size: 2.4em;
+    text-align: justify;
+    line-height: 2.5em; 
+}
+div#niver{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+ div#niver img{
+    width: 400px;
+    height: 300px;
+ }
+div.final img{
+    width: 500px;
+    height: 500px;
+}
+img#ajuste{
+    width: 500px;
+    height: 400px;
+}
+section#final{
+    display: flex;
+    justify-content: center;
+}
+section#final p{
+    font-size: 2.4em;
+    text-align: justify;
+    line-height: 2.5em; 
+}
+div.final{
+    margin: 40px;
+}
+
