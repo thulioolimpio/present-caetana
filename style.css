@@ -78,6 +78,10 @@ div.video{
     justify-content: center;
     margin: 30px;
 }
+video{
+    width: 500px;
+    height: 400px;
+}
 section#curiosidade{
     display: flex;
     justify-content: center;
