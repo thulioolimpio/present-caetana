@@ -241,8 +241,14 @@ img.ajj{
     margin: 30px;
 
 }
-#isolado{
+.isolado{
     text-align: center;
     font-size: 2em;
-    margin:10px 40px;
+    margin:10px 50px;
+}
+#choro{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
 }
