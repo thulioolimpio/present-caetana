@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+    
+}
+body{
+    background-color: black;
+}
+h1{
+    background-color:black;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+section.cont{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+   
+    height: 100vh
+}
+section P{
+    font-size: 2.8em;
+    text-align: justify;
+    line-height: 2.5em;
+    background-color: lightgray;   
+    padding: 10px;
+    border-radius: 5px;
+}
+section.bage-logo{
+    height: 100px;
+    width: 100vw;
+    background-color: black;
+    background-image: url(imagens/file.png);
+    background-position: center;
+    background-size: 100px;
+}
+section#bage{
+    display: block;
+    margin-bottom: 100px;
+
+}
+section#bage p {
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100px;
+    text-align: center;
+}
+
+section#bage img{
+    width: 400px;
+    height: 300px;
+}
+section#testemunho{
+    margin-top: 30px;
+    display: grid;
+    place-content: center;
+}
+section#testemunho p{
+    font-size: 2.4em;
+    text-align: justify;
+    line-height: 2.5em; 
+}
+section#testemunho video{
+    margin: 20px;
+    width: 400px;
+    height: 600px;
+
+   
+
+    
+}
