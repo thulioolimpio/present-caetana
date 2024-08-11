@@ -37,7 +37,7 @@ section.cont{
     justify-content: center;
     align-items: center;
    
-    height: 100vh
+    height: 90vh
 }
 section P{
     font-size: 2.4em;
@@ -72,7 +72,7 @@ section#bage p {
 .direita{
     display: flex;
     justify-content: space-between;
-    height: 80vh;
+    height: 90vh;
     margin: 20px;
 }
 .direita img{
@@ -89,13 +89,13 @@ section#bage p {
 .esquerda{
     display: flex;
     justify-content: space-between;
-    height: 80vh;
+    height: 90vh;
     margin: 20px;
 }
 .centro{
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
 }
 img.logo{
     width: 150px;
@@ -118,7 +118,7 @@ section#testemunho{
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    height: 100vh;
+    height: 90vh;
 }
 section#testemunho p{
     font-size: 2.4em;
@@ -129,7 +129,7 @@ div.video{
     display: flex;
     justify-content: center;
     margin: 30px;
-    height: 100vh;
+    height: 90vh;
 }
 video{
     width: 500px;
@@ -151,7 +151,7 @@ div#niver{
     display: flex;
     justify-content: center;
     margin: 30px;
-    height: 100vh;
+    height: 90vh;
     
     
 }
@@ -203,7 +203,7 @@ img.ajj{
     
         display: flex;
         justify-content: left;
-        height: 100vh;
+        height: 90vh;
         margin: 20px;
     
 }
@@ -211,12 +211,12 @@ img.ajj{
     
         display: flex;
         justify-content: right;
-        height: 100vh;
+        height: 90vh;
         margin: 20px;
     
 }
 #the-last{
-    height: 100vh;
+    height: 90vh;
 }
 #one p{
     display: inline;
