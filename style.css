@@ -186,7 +186,7 @@ div#niver p{
     height: 20px;
     font-size: 2em;
     text-align: center;
-    margin: 20px;
+    margin-left: 100px;
     
  }
 div#final img{
@@ -257,7 +257,7 @@ img.ajj{
 }
 
 #choro{
-    margin-top: 40px;
+    
     display: flex;
     justify-content: center;
     height: 100vh;
@@ -267,4 +267,9 @@ p.isolado{
     text-align: center;
     font-size: 2em;
     margin:10px 50px;
+    
+}
+h1.isolado{
+    height: 100vh;
+    margin-top: 200px;
 }
