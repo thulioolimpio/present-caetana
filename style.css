@@ -9,6 +9,53 @@
     
     
 }
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#acesso {
+    text-align: center;
+}
+
+#btn-acessar {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+#btn-acessar:hover {
+    background-color: red;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#btn-acessar:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#conteudo {
+    display: none; /* Inicialmente oculto */
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+
+
 .hidden{
     opacity: 0;
     filter: blur(15px);

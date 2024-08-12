@@ -99,3 +99,17 @@ function animateEmojis() {
 animateEmojis();
 
 
+
+
+document.getElementById('btn-acessar').addEventListener('click', function() {
+    // Esconde o botão de acesso
+    document.getElementById('acesso').style.display = 'none';
+    
+    // Mostra o conteúdo do site
+    document.getElementById('conteudo').style.display = 'block';
+
+    // Inicia as animações dos emojis
+    animateEmojis(); 
+});
+
+
