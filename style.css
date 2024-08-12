@@ -9,6 +9,19 @@
     
     
 }
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2s;
+}
+
 ::-webkit-scrollbar{
     width: 0px;
     height: 0px;
@@ -37,7 +50,7 @@ section.cont{
     justify-content: center;
     align-items: center;
    
-    height: 90vh
+    height: 100vh
 }
 section P{
     font-size: 2.4em;
@@ -72,7 +85,7 @@ section#bage p {
 .direita{
     display: flex;
     justify-content: space-between;
-    height: 90vh;
+    height: 100vh;
     margin: 20px;
 }
 .direita img{
@@ -89,13 +102,13 @@ section#bage p {
 .esquerda{
     display: flex;
     justify-content: space-between;
-    height: 90vh;
+    height: 100vh;
     margin: 20px;
 }
 .centro{
     display: flex;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
 }
 img.logo{
     width: 150px;
@@ -118,7 +131,7 @@ section#testemunho{
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    height: 90vh;
+    height: 100vh;
 }
 section#testemunho p{
     font-size: 2.4em;
@@ -129,7 +142,7 @@ div.video{
     display: flex;
     justify-content: center;
     margin: 30px;
-    height: 90vh;
+    height: 100vh;
 }
 video{
     width: 500px;
@@ -138,7 +151,8 @@ video{
 section#curiosidade{
     display: flex;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
+    
 }
 section#curiosidade p{
     font-size: 2.4em;
@@ -151,7 +165,7 @@ div#niver{
     display: flex;
     justify-content: center;
     margin: 30px;
-    height: 90vh;
+    height: 100vh;
     
     
 }
@@ -203,7 +217,7 @@ img.ajj{
     
         display: flex;
         justify-content: left;
-        height: 90vh;
+        height: 100vh;
         margin: 20px;
     
 }
@@ -218,8 +232,8 @@ img.ajj{
 #the-last{
     height: 90vh;
 }
-#one p{
-    display: inline;
+.one p {
+    display: inline-block;
     background-color: black;
     color: white;
     height: 20px;
@@ -241,14 +255,16 @@ img.ajj{
     margin: 30px;
 
 }
-.isolado{
-    text-align: center;
-    font-size: 2em;
-    margin:10px 50px;
-}
+
 #choro{
     margin-top: 40px;
     display: flex;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
+}
+p.isolado{
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    margin:10px 50px;
 }
