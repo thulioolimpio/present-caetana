@@ -315,7 +315,7 @@ p.isolado{
     font-size: 2em;
     margin:10px 50px;
     margin-top: 300px;
-    height: 80vh;
+    height: 50vh;
     
 }
 h1.isolado{
@@ -371,7 +371,8 @@ button {
     
 }
 .form-container{
-    height: 50vh;
+    height: 30vh;
+    padding-bottom: 200px;
 }
 /* Estilo específico para os botões "Sim" e "Não" */
 #btn-sim {
@@ -394,12 +395,17 @@ button {
 
 /* Estilo para o contêiner do jogo da forca */
 #forca-container {
+    
+    height: 100vh;
     display: none;
+    align-items: top;
     text-align: center;
     background-color: black;
     padding: 30px;
+    padding-bottom: 500px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    
 }
 
 /* Estilo para a palavra sendo adivinhada no jogo da forca */
@@ -414,7 +420,7 @@ button {
     margin: 5px;
     padding: 10px;
     font-size: 1rem;
-    background-color: #6200ea;
+    background-color: red;
     color: white;
     border: none;
     border-radius: 5px;
@@ -423,7 +429,7 @@ button {
 }
 
 #forca-botoes button:hover {
-    background-color: #3700b3;
+    background-color: black;
 }
 
 /* Estilo para a exibição de vidas */
@@ -436,5 +442,17 @@ button {
 #forca-status {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #c60055;
+    color: red;
+}
+#gay{
+    margin-top: 300px;
+    height: 50vh;
+}
+#silva{
+    
+    padding-bottom: 100px;
+}
+#beijo{
+    margin-bottom: 40px;
+    font-size: 1.5em;
 }
