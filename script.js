@@ -113,3 +113,123 @@ document.getElementById('btn-acessar').addEventListener('click', function() {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const btnSim = document.getElementById('btn-sim');
+    const btnNao = document.getElementById('btn-nao'); // Certifique-se de que este ID está correto
+    const formContainer = document.getElementById('form-container');
+    const forcaContainer = document.getElementById('forca-container'); // Certifique-se de que este ID está correto
+
+    // Adiciona um evento de movimento do mouse sobre o botão "Sim"
+    btnSim.addEventListener('mouseover', function() {
+        const containerRect = formContainer.getBoundingClientRect();
+        const btnRect = btnSim.getBoundingClientRect();
+
+        // Calcula novas posições aleatórias para o botão "Sim" dentro do container
+        const offsetX = Math.random() * (containerRect.width - btnRect.width);
+        const offsetY = Math.random() * (containerRect.height - btnRect.height);
+
+        // Aplica as novas posições ao botão "Sim"
+        btnSim.style.position = 'absolute';
+        btnSim.style.left = `${Math.max(0, offsetX)}px`;
+        btnSim.style.top = `${Math.max(0, offsetY)}px`;
+    });
+
+    // Quando o botão "Não" for clicado, exibe o jogo da forca
+    btnNao.addEventListener('click', function() {
+        formContainer.style.display = 'none';
+        forcaContainer.style.display = 'block';
+        iniciarJogoDaForca();
+    });
+
+    // Jogo da Forca
+    const fraseInicial = "FELIZ ANIVERSÁRIO,";
+    const palavraSecreta = "EU TE AMO";
+    const simboloCoracao = "❤️"; // Símbolo de coração ao lado da palavra secreta
+    let palavraAdivinhada = Array.from(palavraSecreta).map(char => char === ' ' ? ' ' : '_');
+    let vidas = 6;
+
+    function iniciarJogoDaForca() {
+        // Atualiza a exibição da frase inicial
+        atualizarPalavraNaTela();
+        criarBotoes();
+        atualizarVidas();
+    }
+
+    function atualizarPalavraNaTela() {
+        const forcaPalavra = document.getElementById('forca-palavra');
+        // Exibe a frase inicial + palavra adivinhada + coração
+        forcaPalavra.textContent = fraseInicial + " " + palavraAdivinhada.join('') + " " + simboloCoracao;
+    }
+
+    function criarBotoes() {
+        const forcaBotoes = document.getElementById('forca-botoes');
+        const alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('');
+
+        forcaBotoes.innerHTML = ''; // Limpa os botões anteriores, se houver
+
+        for (let letra of alfabeto ) {
+            const btn = document.createElement('button');
+            btn.textContent = letra;
+            btn.addEventListener('click', function() {
+                verificarLetra(letra, btn);
+            });
+            forcaBotoes.appendChild(btn);
+        }
+    }
+
+    function verificarLetra(letra, btn) {
+        let acertou = false;
+
+        for (let i = 0; i < palavraSecreta.length; i++) {
+            if (palavraSecreta[i] === letra) {
+                palavraAdivinhada[i] = letra;
+                acertou = true;
+            }
+        }
+
+        btn.disabled = true;
+
+        if (!acertou) {
+            vidas--;
+            atualizarVidas();
+            if (vidas > 0) {
+                fornecerDica();
+            } else {
+                exibirResultado('Você perdeu! Mas não desista, tente novamente!');
+            }
+        } else {
+            atualizarPalavraNaTela();
+            if (!palavraAdivinhada.includes('_')) {
+                exibirResultado('Sim! Eu posso falar isso, 1 ano não são dois dias né?');
+                
+            }
+        }
+    }
+
+    function fornecerDica() {
+        const dicas = [
+            "Dica: É algo que se diz a alguém especial.",
+            "Dica: É uma frase curta.",
+            "Dica: Inclui um símbolo de amor.",
+            "Dica: Expressa um sentimento profundo."
+        ];
+        const forcaStatus = document.getElementById('forca-status');
+        forcaStatus.textContent = dicas[6 - vidas]; // Mostra a dica com base no número de vidas restantes
+    }
+
+    function atualizarVidas() {
+        const forcaVidas = document.getElementById('forca-vidas-count');
+        forcaVidas.textContent = vidas;
+    }
+
+    function exibirResultado(mensagem) {
+        const forcaStatus = document.getElementById('forca-status');
+        forcaStatus.textContent = mensagem;
+
+        // Desabilitar todos os botões após o jogo terminar
+        const botoes = document.querySelectorAll('#forca-botoes button');
+        botoes.forEach(btn => btn.disabled = true);
+    }
+});
+
+
