@@ -456,3 +456,69 @@ button {
     margin-bottom: 40px;
     font-size: 1.5em;
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #btn-acessar {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+    }
+
+    section.cont, 
+    section#testemunho, 
+    section#curiosidade, 
+    div.video, 
+    div#niver,
+    .direita, 
+    .esquerda, 
+    .centro, 
+    .lele, 
+    .didi {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    p, 
+    h1 {
+        font-size: 1.5em;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    section#bage p, 
+    div#niver p, 
+    .one p, 
+    #acabou p {
+        font-size: 1.2em;
+        text-align: justify;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+
+    #forca-container {
+        padding: 10px;
+    }
+
+    #festinha p {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
