@@ -195,20 +195,20 @@ video{
     width: 500px;
     height: 500px;
 }
-section#curiosidade{
+section.curiosidade{
     display: flex;
     justify-content: center;
     height: 100vh;
     
 }
-section#curiosidade p{
+section.curiosidade p{
     font-size: 2.4em;
     text-align: justify;
     line-height: 2.4em; 
    
 
 }
-div#niver{
+div.niver{
     display: flex;
     justify-content: center;
     margin: 30px;
@@ -216,17 +216,17 @@ div#niver{
     
     
 }
-div#niver p{
+div.niver p{
     
    line-height: 2em;
     
     
 }
- div#niver img{
+ div.niver img{
     width: 400px;
     height: 300px;
  }
- div#niver p{
+ div.niver p{
     display: inline;
     background-color: black;
     color: white;
@@ -455,6 +455,43 @@ button {
 #beijo{
     margin-bottom: 40px;
     font-size: 1.5em;
+}
+div#acc{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    
+}
+p#dança a{
+    text-decoration: none;
+    color: black;
+}
+p#dança a:hover{
+    color: white;
+}
+p#dança{
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    
+
+   
+}
+p#dança:hover{
+    background-color: red;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+
 }
 
 @media only screen and (max-width: 768px) {
